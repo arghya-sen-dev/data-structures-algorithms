@@ -38,7 +38,32 @@ class MaxHeap:
         self.heap[0]=self.heap.pop()
         self._sink_down(0)
         return max_value
-    
+def kth_smallest_number(nums,k):
+    max_heap=MaxHeap()
+    for num in nums:
+        max_heap.insert(num)
+        if len(max_heap.heap)>k:
+            max_heap.remove()
+    return max_heap.remove()
+def stream_max(nums):
+    new_list=[]
+    max_value = float('-inf')
+    for num in nums:
+        if(num>max_value):
+            max_value=num
+            new_list.append(num)
+        else:
+            new_list.append(max_value)
+    return new_list
+
+def stream_max_using_heap(nums):
+    new_list=[]
+    max_heap=MaxHeap()
+    for num in nums:
+        max_heap.insert(num)
+        new_list.append(max_heap.heap[0])
+    return new_list
+
 
 my_heap=MaxHeap()
 my_heap.insert(99)
@@ -54,4 +79,6 @@ print(my_heap.remove())
 print(my_heap.heap)
 print(my_heap.remove())
 print(my_heap.heap)
+print(kth_smallest_number([2,3,5,10,10,2],4))
+print(stream_max_using_heap([-1,-2,-3,-4,-5]))
 
