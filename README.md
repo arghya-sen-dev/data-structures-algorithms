@@ -59,44 +59,48 @@ Tools: VS Code , Git
 📂 Folder Structure
 workspace-root/
 ├── array/
-│   └── digit_sum.py
+│ └── digit_sum.py
 ├── BIG-O/
-│   ├── o1.py
-│   └── on2.py
+│ ├── o1.py
+│ └── on2.py
 ├── Classes/
-│   ├── class.py
-│   └── find_items.py
+│ ├── class.py
+│ └── find_items.py
 ├── DoublyLinkedList/
-│   └── doublyLinkedList.py
+│ └── doublyLinkedList.py
 ├── Graph/
-│   └── graph.py
+│ └── graph.py
 ├── HashTable/
-│   └── hashtable.py
+│ └── hashtable.py
 ├── Heap/
-│   ├── maxHeap.py
-│   └── minHeap.py
+│ ├── maxHeap.py
+│ └── minHeap.py
 ├── LinkedList/
-│   └── linkedList.py
+│ └── linkedList.py
 ├── Pointers/
-│   └── pointer.py
+│ └── pointer.py
 ├── Queue/
-│   └── queue.py
+│ └── queue.py
 ├── Stacks/
-│   └── stack.py
+│ └── stack.py
 └── Tree/
-    └── bst.py
+└── bst.py
 
 ▶️ How to Run
 
 Clone the repository:
 
-git clone https://github.com/<your-username>/dsa-python.git
-cd dsa-python
+```
+git clone https://github.com/arghya-sen-dev/data-structures-algorithms.git
+```
 
+```
+cd dsa-python
+```
 
 Run a Python file:
 
-python problems/two_sum.py
+python problems/digit_sum.py
 
 🎯 Goals
 
